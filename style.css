@@ -1,7 +1,92 @@
 body {
-	font: "Roboto";
+	font: Roboto;
 	font-size: 1.6em;
 	line-height: 1.2em;
 	
 	margin: 0;
+}
+
+.picture {
+	margin: 100px auto;
+
+	display: grid;
+
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+
+	gap: 30px;
+
+	width: 280px;
+}
+
+.red-rectangle {
+	width: 190px;
+	height: 100px;
+
+	border: 3px solid black;
+	background-color: red;
+}
+
+.double-color-square {
+	width: 100px;
+	height: 100px;
+
+	overflow: hidden;
+}
+
+.double-color-square__inner {
+	border-top: 50px solid red;
+	border-right: 50px solid red;
+	border-bottom: 50px solid violet;
+	border-left: 50px solid violet;
+}
+
+.circled-square {
+	margin: 0 10px 10px 0;
+
+	width: 124px;
+	height: 124px;
+
+	box-shadow: 8px 8px 4px 0 rgba(0, 0, 0, 0.5);
+
+	border-radius: 25%;
+	background-color: blue;
+}
+
+.heart {
+	width: 280px;
+	height: 280px;
+
+	background-color: transparent;
+
+	overflow: hidden;
+}
+
+.heart__circle-param {
+	position: absolute;
+
+	background-color: greenyellow;
+}
+
+.heart__circle-left {
+	clip-path: circle(78px at 85px 110px);
+
+	width: 280px;
+	height: 280px;
+}
+
+.heart__circle-right{
+	clip-path: circle(78px at 195px 110px);
+
+	width: 280px;
+	height: 280px;
+}
+
+.heart__square {
+	width: 280px;
+	height: 280px;
+
+	clip-path: polygon(140px 55px, 255px 160px, 140px 275px, 25px 160px);
 }
