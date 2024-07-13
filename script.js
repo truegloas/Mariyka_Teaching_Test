@@ -1,6 +1,4 @@
-let elems = document.getElementsByClassName("heart__circle-param");
-
-let elemsArray = Array.from(elems);
+let elemsArray = Array.from(document.getElementsByClassName("heart__circle-param"));
 
 elemsArray.forEach((elem) => {
     elem.style.backgroundColor = 'greenyellow';

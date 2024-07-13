@@ -67,7 +67,7 @@ body {
 .heart__circle-param {
 	position: absolute;
 
-	transition: background-color 500ms;
+	transition: background-color 100ms;
 }
 
 .heart__circle-left {
